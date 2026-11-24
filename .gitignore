@@ -1,53 +1,50 @@
 
-# Python cache
+# Python virtual environments
+.venv/
+venv/
+env/
+.venv-mcp/
 __pycache__/
 *.py[cod]
-*$py.class
 
-# Virtual environments
-venv-mcp/
-.venv-mcp/
-env/
-ENV/
+# Node dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.vite/
 
 # Environment variables
 .env
 .env.*
 !.env.example
 
-# Python packaging
-build/
-dist/
-*.egg-info/
-.eggs/
-
-# Testing
+# Python cache and testing
 .pytest_cache/
-.coverage
-htmlcov/
-.tox/
-
-# Type checking / linting
 .mypy_cache/
 .ruff_cache/
-.pyright/
+.coverage
+htmlcov/
 
 # Logs
 *.log
 logs/
 
-# Database files (local)
+# Local databases
 *.db
 *.sqlite
 *.sqlite3
 
-# Jupyter
-.ipynb_checkpoints/
-
 # IDE
-.vscode/
 .idea/
+.vscode/
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
